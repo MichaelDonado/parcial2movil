@@ -1,0 +1,1106 @@
+{
+	"info": {
+		"_postman_id": "152163ce-6bfa-402a-b79d-530c5b017ecf",
+		"name": "Parcial2_Movil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30381267"
+	},
+	"item": [
+		{
+			"name": "Ciudad",
+			"item": [
+				{
+					"name": "Ciudad",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/viaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"viaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveCiudad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idpasajero\": 7,\r\n    \"idvehiculo\": 1,\r\n    \"hora_inicio\": \"12:25pm\",\r\n    \"hora_fin\": \"5:25pm\",\r\n    \"ruta\": \"Barranquilla/Valledupar\",\r\n    \"estado\": \"disponible\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/saveviaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"saveviaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCiudad",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"idpasajero\": 7,\r\n    \"idvehiculo\": 1,\r\n    \"hora_inicio\": \"3:00pm\",\r\n    \"hora_fin\": \"8:00pm\",\r\n    \"ruta\": \"Bogota-Medellin\",\r\n    \"estado\": \"Disponible\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updateviaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updateviaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCiudad",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletepago/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletepago",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conductor",
+			"item": [
+				{
+					"name": "Conductor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/pasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"pasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveConductor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juan David\",\r\n    \"apellido\": \"Barrios\",\r\n    \"correo_electronico\": \"jd@gmail.com\",\r\n    \"telefono\": \"101025\",\r\n    \"direccion\": \"juanD direccion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savepasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savepasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateConductor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"nombre\": \"Jeider Alexander\",\r\n    \"apellido\": \"Foronda Pacheco\",\r\n    \"correo_electronico\": \"jeider@gmail.com\",\r\n    \"telefono\": \"987456\",\r\n    \"direccion\": \"direccion jeider\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatepasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatepasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteConductor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletepasajero/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletepasajero",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pago",
+			"item": [
+				{
+					"name": "Pago",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/pago",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"pago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SavePago",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idpasajero\": 6,\r\n    \"monto_total\": \"500000\",\r\n    \"fecha_pago\": \"15/10/2023\",\r\n    \"metodo_pago\": \"Tarjeta de credito\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savepago",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savepago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePago",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"idpasajero\": 1, \r\n    \"monto_total\": \"60.000\", \r\n    \"fecha_pago\": \"17/10/2023\",\r\n    \"metodo_pago\": \"efectivo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatepago",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatepago"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePago",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletepago/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletepago",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pasajero",
+			"item": [
+				{
+					"name": "Pasajero",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/pasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"pasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SavePasajero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juan David\",\r\n    \"apellido\": \"Barrios\",\r\n    \"correo_electronico\": \"jd@gmail.com\",\r\n    \"telefono\": \"101025\",\r\n    \"direccion\": \"juanD direccion\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savepasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savepasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update_Pasajero",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"nombre\": \"Jeider Alexander\",\r\n    \"apellido\": \"Foronda Pacheco\",\r\n    \"correo_electronico\": \"jeider@gmail.com\",\r\n    \"telefono\": \"987456\",\r\n    \"direccion\": \"direccion jeider\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatepasajero",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatepasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletePasajero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletepasajero/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletepasajero",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "resena",
+			"item": [
+				{
+					"name": "Resena",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/reporte",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"reporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveResena",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipo_reporte\": \"Nose\",\r\n    \"fecha_generacion\": \"16/10/2023\",\r\n    \"estado\": \"reporte@gmail.com\",\r\n    \"contenido_reporte\": \"El pasajero viajara a la ciudad de Bogota\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savereporte",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savereporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateResena",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"tipo_reporte\": \"Actualización de datos\",\r\n    \"fecha_generacion\": \"16/10/2023\",\r\n    \"estado\": \"Disponible el viaje del usuario\",\r\n    \"contenido_reporte\": \"El usuario cambio su destino a Medellin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatereporte",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatereporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteResena",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletereporte/5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletereporte",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Solicitud",
+			"item": [
+				{
+					"name": "Solicitud",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/solicitud",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"solicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveSolicitud",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idviaje\": 5,\r\n    \"origen\": \"Barranquilla\",\r\n    \"destino\": \"Valledupar\",\r\n    \"estado\": \"Disponible\",\r\n    \"hora_solicitud\": \"12:14pm\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savesolicitud",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savesolicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateSolicitud",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": ,\r\n    \"idviaje\": ,\r\n    \"origen\": ,\r\n    \"destino\": ,\r\n    \"estado\": ,\r\n    \"hora_solicitud\": ,\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatesolicitud",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatesolicitud"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSolicitud",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletesolicitud/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletesolicitud",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehiculo",
+			"item": [
+				{
+					"name": "Vehiculo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/vehiculo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"vehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveVehiculo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"placa\": \"mxm-458\",\r\n    \"modelo\": \"sedan familiar\",\r\n    \"estado\": \"disponible\",\r\n    \"capacidad\": \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/savevehiculo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"savevehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateVehiculo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"placa\": \"lzb-668\",\r\n    \"modelo\": \"familiar\",\r\n    \"estado\": \"disponible\",\r\n    \"capacidad\": \"30\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updatevehiculo",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updatevehiculo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteVehiculo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletevehiculo/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletevehiculo",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Viaje",
+			"item": [
+				{
+					"name": "Viaje",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/viaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"viaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SaveViaje",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idpasajero\": 7,\r\n    \"idvehiculo\": 1,\r\n    \"hora_inicio\": \"12:25pm\",\r\n    \"hora_fin\": \"5:25pm\",\r\n    \"ruta\": \"Barranquilla/Valledupar\",\r\n    \"estado\": \"disponible\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/saveviaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"saveviaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateViaje",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 3,\r\n    \"idpasajero\": 7,\r\n    \"idvehiculo\": 1,\r\n    \"hora_inicio\": \"3:00pm\",\r\n    \"hora_fin\": \"8:00pm\",\r\n    \"ruta\": \"Bogota-Medellin\",\r\n    \"estado\": \"Disponible\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/updateviaje",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"updateviaje"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/parcial/deletepago/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"parcial",
+								"deletepago",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
