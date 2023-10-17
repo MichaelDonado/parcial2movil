@@ -4,7 +4,7 @@ from flask_marshmallow import Marshmallow
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root@localhost/backend"
+app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root@localhost/doortodoor"
 app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
 
 app.secret_key = "movil2"

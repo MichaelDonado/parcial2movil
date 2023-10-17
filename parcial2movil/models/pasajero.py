@@ -21,10 +21,6 @@ class Pasajero(db.Model):
 with app.app_context():
     db.create_all()
 
-
-with app.app_context():
-    db.create_all()
-
 class PasajeroSchema(ma.Schema):
     class Meta:
         fields = ("id","nombre","apellido","email","num_tel","direccion")

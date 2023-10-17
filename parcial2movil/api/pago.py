@@ -47,3 +47,5 @@ def delete(id):
     db.session.delete(pago)
     db.session.commit()
     return jsonify(pago_schema.dump(pago))
+
+

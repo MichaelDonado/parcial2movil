@@ -9,7 +9,7 @@ ciudades_schema = CiudadSchema(many=True)
 
 
 @route_ciudades.route("/ciudades", methods=["GET"])
-def Ciudad():
+def ciudad():
     resultall = Ciudad.query.all()  
     resultado_ciudad = ciudades_schema.dump(resultall)
     return jsonify(resultado_ciudad)
