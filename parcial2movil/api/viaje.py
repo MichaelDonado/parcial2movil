@@ -21,7 +21,7 @@ def save():
     ruta = request.json['ruta']
     solicitud_id = request.json['solicitud_id']
 
-    new_viaje = Viaje(vehiculo, inicio, fin, solicitud_id)
+    new_viaje = Viaje(vehiculo, inicio, fin, solicitud_id, ruta)
     db.session.add(new_viaje)
     db.session.commit()
     return jsonify(viaje_schema.dump(new_viaje))
